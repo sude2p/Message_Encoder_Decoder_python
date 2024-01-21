@@ -2,7 +2,7 @@
 should_end = False
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print("Welcome to message Encoder or Decoder ")
-choice = input("Enter  to be Encoded or Decoded ").lower()
+choice = input("Enter if you want message to be Encode or Decode ").lower()
 # message =input("Enter a message to be Encoded ")
 #shift = int(input("Enter the shift number "))
 
@@ -40,7 +40,7 @@ while not should_end :
         shift = int(input("Enter the shift number: "))
         shift = shift % 26
         Decoder(input_message=message,shift_number=shift)
-    decision = input("Do you want to continue? Y/N").lower()
+    decision = input("Do you want to continue? Y/N ").lower()
     if decision == "y" :
         should_end = True
     else :
